@@ -7,6 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PortFolio YM</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="magic.css">
+    <script src="JavaScript.js"></script>
+    <!--lien pour scroll a l'horizontaal -->
+    <script type='text/javascript'
+        src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
+    <script type='text/javascript' src='/js/jquery.mousewheel.min.js'></script>
+    
+    <!--fin -->
+
     <!-- CSS only -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -23,7 +32,8 @@
         crossorigin="anonymous"></script>
 </head>
 
-<body style="background-image: url(https://zupimages.net/up/20/35/v0yl.png);">
+<body class="wrapper" style="background-image: url(https://zupimages.net/up/20/35/v0yl.png);">
+
     <header>
         <div class="row" style="background-color: #7400b8;">
             <div class="col-6 ">
@@ -32,7 +42,7 @@
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="true" aria-label="Toggle navigation">
                         <span>
-                            <img src="https://zupimages.net/up/20/33/8uki.png" width="30" height="30"
+                            <img class="tinRightIn" src="https://zupimages.net/up/20/33/8uki.png" width="30" height="30"
                                 class="d-inline-block align-top" alt="" loading="lazy">
                         </span>
                     </button>
@@ -41,24 +51,24 @@
 
                     <div class="collapse navbar-collapse text-light" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active ">
+                            <li class="nav-item active ml-1">
                                 <a class="nav-link  text-light" href="#">Mes HTML</a>
                             </li>
-                            <li class="nav-item ">
+                            <li class="nav-item ml-1">
                                 <a class="nav-link  text-light" href="#">Mes Javascripts</a>
                             </li>
-                            <li class="nav-item ">
+                            <li class="nav-item ml-1">
                                 <a class="nav-link  text-light" href="#">Mes CSS</a>
                             </li>
-                            <li class="nav-item ">
-                                <a class="nav-link  text-light" href="#">la palette utilisé pour le
-                                    PortFolio</a>
-                                <div class="pallette">
-                                    <div class="couleur1 border border-dark">7400B8</div>
-                                    <div class="couleur2 border border-dark">6930C3</div>
-                                    <div class="couleur3 border border-dark">4EA8DE</div>
-                                    <div class="couleur4 border border-dark">56CFE1</div>
-                                    <div class="couleur5 border border-dark">64DFDF</div>
+                            <li class="nav-item ml-1">
+                                <p class="nav-link  text-center text-light">La palette utilisé pour le
+                                    PortFolio</p>
+                                <div class="pallette text-center ml-1">
+                                    <div class="couleur1 border border-dark">#7400B8</div>
+                                    <div class="couleur2 border border-dark">#6930C3</div>
+                                    <div class="couleur3 border border-dark">#4EA8DE</div>
+                                    <div class="couleur4 border border-dark">#56CFE1</div>
+                                    <div class="couleur5 border border-dark">#64DFDF</div>
                                 </div>
 
                             </li>
@@ -73,30 +83,74 @@
     </header>
     <div class="wrap">
         <div class="col-1"></div>
-        <div class="col-7 text-light">
+        <div class="col-8 text-light">
             <div class='container projects'>
                 <h1 class="first ">Voici mon PortFolio</h1>
 
                 <div class="overlay"></div>
             </div>
 
-            <div class="col-4"></div>
+            <div class="col-3 mb-5"></div>
 
         </div>
     </div>
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-7 text-light text-center border-radius ">
+            <div class="Diplomes py-3">
+                <h3 class="font-weight-bolder text-monospace my-3">Diplômes
+                </h3>
+                <p class="info"> Brevet des collèges </p>
+                <p class="info"> BAC Sciences et Technologies de l'Industrie et du Développement Durable spécialité
+                    Système et d’Information et Numérique </p>
 
+                </p>
+
+                <h3 class="font-weight-bolder text-monospace my-3">Expérience Professionnelles
+                </h3>
+                <p class="info"> Serveur/Plongeur dans un glacier 5 semaines </p>
+                <p class="info"> 1mois de stage dans la société PlugNPLay </p>
+            </div>
+        </div>
+        <div class="col-3 text-light text-center border-radius">
+            <div class="hobbies py-3">
+                <h3 class="font-weight-bolder text-monospace my-3">Mes centres d'intérêt 
+                </h3>
+                <p class="info">Origami </p>
+                <p class="info">Jeux Vidéo 'League of Legends en particulier' </p>
+                <p class="info">J'aime faire des dessins 'gribouillis' </p>
+                <p class="info"> Manga/Animé </p>
+                <p class="info"> Volley-Ball /Football entre ami </p>
+            </div>
+        </div>
+    </div>
     <div class="row py-5">
         <div class="col-3"></div>
         <div class="col-3">
-            <img class="img-fluid" src="https://zupimages.net/up/20/35/33ed.png" alt="">
+            <img class="landingpage img-fluid " src="https://zupimages.net/up/20/35/33ed.png" alt="">
         </div>
-        <div class="col-3 text-light text-center text-monospace">
-            <h1>LandingPage</h1>
-            <p>Landing Page construit a l'aide de bootstrap</p>
+
+        <div class="col-3 text-light text-monospace text-center">
+            <div class="work py-3">
+                <h3 class="font-weight-bolder text-monospace my-3">LandingPage
+                </h3>
+                <p>Landing Page construit a l'aide de bootstrap</p>
+            </div>
         </div>
+
         <div class="col-3"></div>
     </div>
-
+    <!--animations javascript-->
+    <script>
+        const selector = document.querySelector('.landingpage')
+        selector.classList.add('magictime', 'tinLeftIn')
+        const selector2 = document.querySelector('.hobbies ')
+        selector2.classList.add('magictime', 'tinRightIn')
+        const selector3 = document.querySelector('.Diplomes ')
+        selector3.classList.add('magictime', 'tinLeftIn')
+        const selector4 = document.querySelector('.work ')
+        selector4.classList.add('magictime', 'tinRightIn')
+    </script>
 </body>
 
 </html>
