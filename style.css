@@ -48,6 +48,9 @@
       background-color: var(--complimentary-color);
       position: absolute;
       bottom: -10px;
+      border-bottom-right-radius: 50px;
+      border-top-right-radius: 50px;
+
       animation: 1s underline ease-in-out forwards 2s;
       mix-blend-mode: screen;
   }
@@ -75,6 +78,21 @@
       position:absolute;
       z-index: 2;
   }
+.Diplomes{
+  background-color: #7400b8;
+  border-radius: 50px;
+}
+.hobbies{
+  background-color: #6930c3;
+  border-radius: 50px;
+}
+.work{
+  background-color: #4ea8de;
+  border-radius: 50px;
+}
+.landingpage{
+  border-radius: 50px;
+}
   @keyframes skewBg {
     0% {
       transform: scale(.5);
